@@ -1,0 +1,474 @@
+/* Etiqueta general para todos los cuerpos*/
+
+body{
+    background-color: #E4E0E4;
+    font-family: "Lato", sans-serif;
+    font-size: 16px;
+    max-width: 700px;
+    margin: auto;
+    max-width: fit-content;
+    text-decoration: none;
+
+}
+
+
+
+
+
+/*                  Primera Página HTML                     */
+
+
+/* Especificaciones del cuerpo de la primera página*/
+.cuerpoInicio{
+    background-color:  #000000;
+    margin-left: 15px;
+    margin-right: 15px;
+    position: relative;
+}
+h7{
+    margin-top: 60px;
+    font-size: 35px;
+    color: #c6bfbf;
+    text-align: center;
+    float: left;
+    width: 50%;
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+h8{
+    font-size: 40px;
+    color:#cfa1a1;
+    text-align: center;
+    max-width:fit-content;
+    float: left;
+    width: 60%;
+    text-align: left;
+}
+
+
+
+@keyframes movimiento {
+    0% {
+        transform: rotate(-1deg);
+    }
+    50% {
+        transform: rotate(2deg);
+    }
+    100% {
+        transform: rotate(-1deg);
+    }
+}
+
+
+
+#MiFoto{
+    margin-top: 100px;
+    width: 34%;
+    max-width: 34%;
+    float: right;
+    height: auto;
+    animation: movimiento;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+}
+.Descripcion p{
+    font-size: 18px;
+    color:#c6bfbf;
+    text-align: justify;
+    float: left;
+    width:100%;
+    max-width: fit-content;
+}
+
+.BotonInicio a{
+    padding: 20px 30px;
+    border: 3px solid rgb(175, 172, 165);
+    text-decoration: none;
+    color: rgb(175, 172, 165);
+    display:flex;
+    position: initial;
+    width:max-content;
+}
+
+.BotonInicio a:hover{
+    background-color:#cfa1a1;
+    border: 3px solid #cfa1a1;
+    color:#232323;
+}
+
+
+
+
+
+
+
+
+
+/*                  Información HTML                     */
+
+/* Menu de hamburguesa*/
+#menuToggle{
+    display: block;
+    position: relative;
+    z-index: 1;     /*Para poder superponer elementos*/
+    user-select: none;
+    border: 30px solid black;
+    background-color: #000000;
+    width: 100%;
+    top:0px;
+}
+
+/* Cada una de las opciones del menu*/
+#menuToggle a{
+    text-decoration: none;
+    color: #232323;
+}
+
+
+/* En este estilo de menus, el input es lo que el usuario selecciona navegar*/
+#menuToggle input{
+    display: block;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    top: -7px;
+    left: -5px;
+    opacity: 0;
+    z-index: 2;
+}
+
+
+/* Span son los tres segmentos que indican el menu*/
+#menuToggle span{
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    background: #cdcdcd;
+    border-radius: 3px;
+    z-index: 1;
+
+}
+
+
+/* En general cunado no se interactúa con el menú, sus opciones se esconden*/
+#menu{
+    position: absolute;
+    width: 100%;
+    margin: -100px 0 0 -50px;
+    padding: 50px;
+    padding-top: 125px;
+    background: #dcdbdc;
+    list-style-type: none;
+    transform-origin: 0% 0%;
+    transform: translate(-200%, 0);/* En esta parte se esconden las opciones del mnu*/
+}
+
+
+#menu li{
+    padding: 10px 0;
+    font-size: 22px;
+}
+
+#menuToggle input:checked ~ ul{  /* Selección de un atributo (ul) cuando el input se ha selccionado (una de las opciones del menu)*/
+    transform: none;
+}
+
+
+
+
+/* Contenido de la Primera página*/
+
+.ContenedorInicio{
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: justify;
+}
+.BtonModo{
+    position: relative;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.Presentacion img{
+    float:left;
+    width: 50%;
+    margin-right: 10px;
+}
+
+
+.foto_datos{
+    float:right;
+    width: 40%;
+    margin-left: 10px;
+}
+
+
+#Habilidades{
+    margin-left: 10px;
+    margin-right: 10px;
+
+}
+
+.skill p, ul, li{
+    text-align: justify;
+}
+
+
+/*Estilo del botón que sube hasta arriba del todo al hacer scroll */
+.go-top {
+    position: fixed;
+    right: 30px;
+    bottom: 25px;
+    width: 40px;
+    height:40px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*                  Proyectos Página HTML                     */
+
+
+/*Proyecto1*/
+.Proyecto1{
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+#BCG{
+    float:right;
+    width: 30%;
+    margin-left: 10px;
+
+}
+.TextoProyetco1 p{
+    text-align: justify;
+}
+.enlace1{
+    text-align:right;
+    text-decoration: none;
+    color: green;
+
+}
+
+/*Proyecto2*/
+.Proyecto2{
+    text-align: justify;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.Proyecto2 img{
+    float:right;
+    width: 30%;
+    margin-left: 10px;
+}
+
+.enlace2{
+    text-align:right;
+    text-decoration: none;
+    color: orange;
+
+}
+
+/*Proyecto3*/
+.Proyecto3 h2{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.TextoProyetco3 p ,img{
+    text-align: justify;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.Proyecto3 img{
+    float:right;
+    width: 30%;
+    margin-left: 10px;
+}
+
+.enlace3{
+    text-align:right;
+    text-decoration: none;
+    color: red;
+
+}
+
+
+
+
+
+
+
+
+/*                  Contacta Página HTML                     */
+
+.cuerpoFormulario{
+    background-image: url("https://img.freepik.com/premium-vector/abstract-plexus-blue-geometrical-shapes-connection-web-concept-digital-communication-technology-network-background-with-moving-lines-dots_43778-532.jpg");
+}
+h3{
+    margin-top: 40px;
+}
+
+.ContenedorFormulario{
+    margin-top: 50px;
+    text-align: center;
+    color:rgb(210, 207, 207);
+    font-size: 26px;
+
+}
+.CuerpoForm{
+    max-width: fit-content;
+}
+
+.contacta{
+    font-size: 30px;
+    text-align: center;
+}
+
+
+#title{
+    font-weight: bold;
+    letter-spacing: 3px;
+
+}
+
+/*Estilos de los mensajes en el caso de que salten errores*/
+#Validacion{
+    font-size: 16px;
+    color:red;
+}
+
+.Formulario{
+    padding: 18px;
+    min-width: fit-content;
+}
+
+
+input {
+    background-color:oldlace;
+    border: 1px solid  rgb(95, 207, 251);
+    margin: 18px;
+    width: 80%;
+
+}
+
+textarea {
+    background-color: oldlace;
+    border: 1px solid  rgb(95, 207, 251);
+    margin: 10px;
+    width: 80%;
+}
+
+
+input:hover,
+textarea:hover {
+    box-shadow: inset 0px 0px 0px 3px rgb(95, 207, 251);
+}
+
+
+#BotonFromulario {
+    margin-top: 20px;
+    background-color: rgb(95, 207, 251);
+    border:4px solid  rgb(95, 207, 251);
+    text-decoration: none;
+    margin-bottom: 20px;
+    width: 40%;
+    color:#232323;
+    padding: 20px 30px;
+}
+
+
+
+
+
+
+
+/*                  Footer                   */
+#footer p{
+    color:#c6bfbf;
+    text-align: center;
+    margin-bottom: 0px;
+    margin-top: auto;
+    display: flex;
+    bottom: 0;
+}
+
+
+
+
+
+
+
+/*                  vista ordenador                   */
+@media (min-width: 1000px) {
+
+    .cuerpoInicio{
+        text-align: center;
+        margin-top:80px;
+    }
+    h7{
+        margin-top: 80px;
+        text-align: center;
+    }
+    h8{
+        font-size: 60px;
+    }
+
+    #Descripcion p{
+        font-size: 18px;
+        color:#c6bfbf;
+        text-align: justify;
+        float: right;
+        margin-left: 20px;
+        margin-bottom: 20px;
+        background-color:  #000000;
+    }
+
+    #MiFoto{
+        width: 23%;
+        float: right;
+        height: auto;
+    }
+
+    .BotonInicio a{
+        padding: 20px 30px;
+        border: 3px solid rgb(175, 172, 165);
+        text-decoration: none;
+        color: rgb(175, 172, 165);
+        display:flex;
+        position: initial;
+        width:90%;
+    }
+
+    body{
+        max-width: 900px;
+        margin: 0 auto !important;
+        font-size: 20px;
+    }
+    body h2{
+        margin-top: 80px;
+    }
+    #Descripcion{
+        margin-top: 50px;
+        font-size: 18px;
+    }
+    .menu-principal a{
+        font-size: 25px;
+    }
+}

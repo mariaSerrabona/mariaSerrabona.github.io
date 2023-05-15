@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title> María Pérez-Serrabona </title>
+    </head>
+
+    <body class="cuerpoFormulario">
+        <div class="ContenedorMenu">
+            <nav>
+                <div id="menuToggle">
+                    <input type="checkbox"/>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <ul id="menu">
+                        <a href="index.html"><li>María Pérez-Serrabona</li></a>
+                        <a href="informacion.html"><li>Información</li></a>
+                        <a href="Portfolio.html"><li>Proyectos</li></a>
+                        <a href="Contacta.html"><li>Contacta Conmigo</li></a>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div class="ContenedorFormulario">
+            <div id="title">
+                <h3>CONTACTA CONMIGO!</h3>
+            </div>
+            <div id="Validacion"></div>
+            <form class="Formulario" id="form">
+                <input type="text" class="Formulario" id="Nombre" placeholder="Nombre y Apellidos" ><br>
+                <input type="email" class="Formulario" id="email" placeholder="Email" required><br>
+                <input type="text" id="asunto" class="Formulario" placeholder="Asunto" required><br>
+                <textarea class="Formulario" placeholder="¿Qué te gustaría saber?"></textarea><br>
+                <button  id="BotonFromulario" type="submit">Enviar</button>
+            </form>
+            <br>
+        </div>
+
+        <footer id="footer">
+            <p> Copyright ©2023 | MARÍA PÉREZ-SERRABONA - INGENIERÍA MATEMÁTICA </p>
+        </footer>
+        <script src="eventos.js"></script>
+    </body>
+</html>
