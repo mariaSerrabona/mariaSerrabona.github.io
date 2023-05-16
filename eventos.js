@@ -66,10 +66,9 @@ if ( document.URL.includes("informacion.html") || document.URL.includes("Portfol
 
 //          Alerta: recordatorio de contacto (10" después de recargar la página).
 
-
-setTimeout(function(){alert("Hey! Si te gusta mi perfil, no dudes en contactar conmigo!")},10000);
-
-
+if ( document.URL.includes("informacion.html") || document.URL.includes("Portfolio.html") ){
+    setTimeout(function(){alert("Hey! Si te gusta mi perfil, no dudes en contactar conmigo!")},15000);
+}
 
 
 
